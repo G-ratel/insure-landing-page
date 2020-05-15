@@ -1,0 +1,420 @@
+body{
+    font-family: karla;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.container2 {
+    height: 640px;
+    background-color: hsl(256, 26%, 20%);
+}
+
+header {
+    background: white;
+    width: 100%;
+    position: absolute;
+}
+.header_content {
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+}
+.logo {
+    float: left;
+    padding: 20px 2px 10px 4px;
+}
+nav {
+    float: right;
+    display: inline-flex;
+}
+#toogle {
+    display: none;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+}
+#tactive {
+    display: none;
+    width: 100%;
+    text-align: right;
+    font-size: 30px;
+}
+nav ul{
+    margin: 0;
+    padding: 1rem;
+}
+nav ul li{
+    display: inline;
+    padding: 10px 25px;
+    margin: 0;
+}
+nav ul li a{
+    text-decoration:none;
+    color: grey;
+    font-size: 12px;
+}
+nav ul li a:hover{
+    color: black;
+}
+nav button {
+    padding: 10px 17px 10px 17px;
+    background-color: hsl(256, 26%, 20%);
+    border: none;
+}
+nav li button a{
+    color: white;
+    font-size: 12px;
+}
+.one {
+    background: url(../img/bg-pattern-intro-right-desktop.svg), url(../img/bg-pattern-intro-left-desktop.svg);
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+}
+.sub_one {
+    margin: auto;
+}
+.row_one {
+    width: 100%;
+}
+.row_one div{
+    float: left;
+}
+.row_one::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.plans {
+    width: 45%;
+    padding-top: 140px;
+}
+.famil {
+    display: none;
+}
+.fam {
+    width: 45%;
+    float: right;
+    padding-left: 40px;
+    padding-top: 140px;
+    padding-right: 10px;
+    padding-bottom: 100px;
+}
+img {
+    width: fit-content;
+}
+.plans h1 {
+    font-weight: 700;
+    font-size: 65px;
+    color: white;
+}
+.plans p {
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+.plans button, .three button {
+    padding: 10px 17px 10px 17px;
+    background-color: white;
+    border: none;
+}
+.plans button a, .three button a{
+    color: hsl(256, 26%, 20%);
+    font-size: 12px;
+    text-decoration: none;
+}
+.sub_one, .two, .three {
+    width: 80%;
+}
+.two, .three, .footerall {
+    margin: auto;
+  }
+.two h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .two h4 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .two p {
+    font-size: 16px;
+    font-weight: 400;
+    color: grey;
+  }
+.row_two {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 90px 0;
+  }
+  .snappy, .prices, .people {
+    flex: 31%;
+    max-width: 31%;
+    padding-right: 20px;
+  }
+ 
+  .three {
+    background: url(../img/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: hsl(256, 26%, 20%);
+    margin-bottom: 80px;
+  }
+  .find_more {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 49px 40px 49px;
+    
+  }
+  .more {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .work {
+    flex: 50%;
+    max-width: 50%;
+    text-align: right;
+    padding-top: 40px;
+    
+  }
+  .three h2 {
+    font-weight: 700;
+    font-size: 57px;
+    color: white;
+    margin: 0px;
+}
+
+  footer {
+      background: url(../img/bg-pattern-footer-desktop.svg);
+      background-repeat: no-repeat;
+      background-color: whitesmoke;
+  }
+  .footerall {
+    width: 80%;
+}
+  .upper, .lower {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+  .flogo, .ficon {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .ficon {
+    text-align: right;
+  }
+  .column {
+    flex: 25%;
+    max-width: 25%;
+  }
+  .column a {
+    text-decoration:none;
+    color: black;
+    font-size: 12px;
+    padding-bottom: 17px;
+}
+.column a:hover {
+    text-decoration: underline;
+}
+.column .ligh p {
+    color: grey;
+    font-size: 12px;
+}
+
+@media (max-width: 1125px) {
+    .footerall, .sub_one, .two, .three {
+        width: 85%;
+    }
+    .row_one {
+        width: 95%;
+    }
+    .two h1 {
+        font-size: 45px;
+      }
+    .plans h1 {
+        font-size: 60px;
+    }
+    .three h2 {
+        font-size: 48px;
+    }
+}
+@media (max-width: 1024px) {
+    .footerall, .sub_one, .two, .three {
+        width: 95%;
+    }
+    .row_one {
+        width: 90%;
+    }
+    .two h1 {
+        font-size: 40px;
+      }
+    .plans h1 {
+        font-size: 53px;
+    }
+    .three h2 {
+        font-size: 47px;
+    }
+}
+@media (max-width: 948px) {
+    .footerall, .sub_one, .two, .three {
+        width: 98%;
+    }
+    .row_one {
+        width: 80%;
+    }
+    .two h1 {
+        font-size: 41px;
+      }
+    .plans h1 {
+        font-size: 45px;
+    }
+    .three h2 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 948px) {
+    .footerall, .sub_one, .two, .three {
+        width: 98%;
+    }
+    .row_one {
+        width: 80%;
+    }
+    .two h1 {
+        font-size: 41px;
+      }
+    .plans h1 {
+        font-size: 45px;
+    }
+    .three h2 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 891px) {
+    .footerall, .sub_one, .two, .three {
+        width: 98%;
+    }
+    .row_one {
+        width: 90%;
+    }
+    .fam img{
+        width: 140%;
+    }
+    .container2 {
+        height: 600px;
+    }
+    .snappy, .prices, .people {
+        flex: 31%;
+        max-width: 31%;
+        padding-right: 10px;
+      }
+      .header_content {
+        width: 100%;
+        margin-left: 4%;
+    }
+}
+@media (max-width: 666px) {
+    .header_content {
+        width: 100%;
+        margin-left: 0px;
+    }
+    nav ul li{
+        padding: 10px 10px;
+    }
+    .container2 {
+        height: 520px;
+    }
+    .plans p {
+        font-size: 13px;
+      }
+    .plans h1 {
+        font-size: 40px;
+    }
+    .three h2 {
+        font-size: 32px;
+    }
+}
+@media (max-width: 583px) {
+    #toogle {
+        display: block;
+    }
+    #tactive {
+        display: block;
+    }
+    #tactive ul {
+        width: 100%;
+        padding-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    #tactive ul li{
+       text-align: center;
+       display: block;
+       padding: 10px;
+       background-color: hsl(256, 26%, 20%);
+    }
+    #tactive ul li a {
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    #tactive ul li button {
+        padding: 10px 70px 10px 70px;
+        background-color: hsl(256, 26%, 20%);
+        border: 1px solid white;
+    }
+    #tactive ul li button a {
+        font-size: 16px;
+        text-decoration: none;
+    }
+    #tactive a img {
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    .res {
+        height: 300px;
+        background: url(../img/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        background-color: hsl(256, 26%, 20%);
+        background-position: bottom right;
+    }
+    nav ul {
+        display: none;
+    }
+    .fam {
+        display: none;
+    }
+    .famil {
+        display: block;
+    }
+    .container2 {
+        height: 1100px;
+    }
+    .plans {
+        width: 100%;
+        padding-bottom: 100px;
+        padding-top: 100px;
+        text-align: center;
+    }
+    .line {
+        display: none;
+    }
+    .row_two {
+        padding: 40px 0;
+      }
+    .snappy, .prices, .people {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0px 30px 20px 30px;
+        text-align: center;
+      }
+       .more, .work, .flogo, .ficon, .column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0px 0px 20px 30px;
+        text-align: center;
+      }
+      .two p, .two h1 {
+          text-align: center;
+      }
+}
